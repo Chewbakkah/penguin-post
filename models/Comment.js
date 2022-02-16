@@ -17,6 +17,13 @@ Comment.init(
             validate: {
                 len: [1]
             }
+        },
+        user_id: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
         }
     }
 )
