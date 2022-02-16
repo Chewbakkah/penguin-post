@@ -1,5 +1,4 @@
-const { DataTypes } = require('sequelize/types');
-const { UPSERT } = require('sequelize/types/query-types');
+const { Model, DataTypes } = require('sequelize/types');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
@@ -57,4 +56,4 @@ USER.init(
       }
     );
     
-    module.exports = User;
+module.exports = User;
