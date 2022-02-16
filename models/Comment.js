@@ -10,6 +10,13 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
             allowNull: false
+        },
+        comment_text: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [1]
+            }
         }
     }
 )
