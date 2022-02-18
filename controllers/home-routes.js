@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
+const { Post, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
     console.log('======================');
     Post.findAll({
-
         attributes: [
             'id',
             'title',
@@ -41,8 +41,8 @@ router.get('/', (req, res) => {
     });
 });
 
-Creating route to GET single post
-Question on line 80
+// Creating route to GET single post
+// Question on line 80
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
@@ -50,7 +50,7 @@ router.get('/post/:id', (req, res) => {
         },
         attributes: [
             'id',
-            'post_url'
+            'post_url',
             'title',
             'user_id',
             'created_at'
@@ -98,4 +98,3 @@ router.get('/login', (req, res) => {
 });
 
 module.exports = router;
-
