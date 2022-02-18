@@ -41,8 +41,8 @@ router.get('/', (req, res) => {
     });
 });
 
-Creating route to GET single post
-Question on line 80
+//Creating route to GET single post
+//Question on line 80
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
@@ -50,7 +50,7 @@ router.get('/post/:id', (req, res) => {
         },
         attributes: [
             'id',
-            'post_url'
+            'post_url',
             'title',
             'user_id',
             'created_at'
