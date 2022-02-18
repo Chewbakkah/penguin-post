@@ -38,7 +38,7 @@ User.belongsToMany(Post, {
     through: Repost,
     as: 'resquawked_post',
     foreignKey: 'user_id'
-})
+});
 
 User.hasMany(Post, {
     foreignKey: 'user_id'
