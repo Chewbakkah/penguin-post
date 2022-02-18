@@ -1,3 +1,7 @@
+
+INSERT INTO user(username, email, password)
+VALUES ('hamilton', 'hamilton@mail.com', 'pass'), ('mario', 'mario@mail.com', 'pass'), ('cory', 'cory@mail.com', 'pass'), ('cheyne', 'cheyne@mail.com', 'pass');
+
 INSERT INTO post (title, post_url, user_id, created_at, updated_at)
 VALUES ("First Post!", "https://user/post_1", 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
     ("Second Post!", "https://user/post_2", 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
@@ -18,4 +22,5 @@ VALUES
     ('SUPPPPPER GOOOOOOOOOOD POST', 4, 2)
     ('SUPPPPPER GOOOOOOOOOOOD POST', 5, 1)
     ('SUPPPPPER GOOOOOOOOOOOOD POST', 5, 2);
+
 
