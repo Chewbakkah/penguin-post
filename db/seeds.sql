@@ -1,3 +1,11 @@
+INSERT INTO post (title, post_url, user_id, created_at, updated_at)
+VALUES ("First Post!", "https://user/post_1", 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+    ("Second Post!", "https://user/post_2", 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+    ("Third Post!", "https://user/post_3", 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+    ("Fourth Post!", "https://user/post_4", 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+    ("Fifth Post!", "https://user/post_5", 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+
 INSERT INTO comment (comment_text, user_id, post_id)
 VALUES
     ('SUPPPPPER GOOD POST', 1, 1)
