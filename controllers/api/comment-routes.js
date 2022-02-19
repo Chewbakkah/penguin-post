@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Comment } = require('../../models');
+const { Comment, User } = require('../../models');
 
 router.get('/', (req, res) => {
     Comment.findAll()
@@ -10,11 +10,38 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/:id', (req, res) => {
+    Comment.findOne({
+        where: {
+            id: req.params.id
+        },
+        attributes: ['comment_text', 'user_id', 'post_id'],
+        // include: [
+        //     {
+        //         model: User,
+        //         attributes: ['username']
+        //     }
+        // ]
+    })
+    .then(dbPostData => {
+        if (!dbPostData) {
+          res.status(404).json({ message: 'No post found with this id' });
+          return;
+        }
+        res.json(dbPostData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+
 router.post('/', (req, res) => {
     if (req.session) {
         Comment.create({
             comment_text: req.body.comment_text,
-            post: req.body.post_id,
+            post_id: req.body.post_id,
             user_id: req.session.user_id
         })
         .then(dbCommentData => res.json(dbCommentData))
