@@ -10,7 +10,8 @@
     "sequelize": "^6.16.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
   "name": "penguin-post",
   "description": "",
