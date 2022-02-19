@@ -1,4 +1,3 @@
-
 INSERT INTO user(username, email, password)
 VALUES ('hamilton', 'hamilton@mail.com', 'pass'), ('mario', 'mario@mail.com', 'pass'), ('cory', 'cory@mail.com', 'pass'), ('cheyne', 'cheyne@mail.com', 'pass');
 
@@ -7,7 +6,6 @@ VALUES ("First Post!", "https://user/post_1", 1),
     ("Second Post!", "https://user/post_2", 2),
     ("Third Post!", "https://user/post_3", 3),
     ("Fourth Post!", "https://user/post_4", 4);
-
 
 INSERT INTO comment (comment_text, user_id, post_id)
 VALUES
@@ -21,5 +19,3 @@ VALUES
     ('SUPPPPPER GOOOOOOOOOOD POST', 4, 2),
     ('SUPPPPPER GOOOOOOOOOOOD POST', 5, 1),
     ('SUPPPPPER GOOOOOOOOOOOOD POST', 5, 2);
-
-

@@ -26,12 +26,12 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     },
     attributes: ['id', 'post_url', 'title', 'created_at'],
-    include: [
-      {
-        model: User,
-        attributes: ['username']
-      }
-    ]
+    // include: [
+    //   {
+    //     model: User,
+    //     attributes: ['username']
+    //   }
+    // ]
   })
     .then(dbPostData => {
       if (!dbPostData) {
@@ -60,7 +60,7 @@ router.post('/', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-  // possibly adding ability to update url?
+  // possibly adding ability to update url
   Post.update(
     {
       title: req.body.title

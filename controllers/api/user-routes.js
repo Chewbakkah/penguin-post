@@ -32,12 +32,13 @@ router.get('/:id', (req, res) => {
           attributes: ['title']
         }
       },
-      {
-        model: Post,
-        attributes: ['title'],
-        through: Favorite,
-        as: 'favorite_posts'
-      }
+      // take a look at this code
+      // {
+      //   model: Post,
+      //   attributes: ['title'],
+      //   through: Favorite,
+      //   as: 'favorite_posts'
+      // }
     ]
   })
     .then(dbUserData => {
