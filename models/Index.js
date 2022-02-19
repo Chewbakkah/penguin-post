@@ -6,8 +6,7 @@ const Favorite = require('./Favorite');
 
 User.hasMany(Post, {
     foreignKey: 'user_id'
-  });
-  
+  });  
 
 Post.belongsTo(User, {
     foreignKey: 'user_id'
