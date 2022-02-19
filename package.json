@@ -14,7 +14,7 @@
     "seed": "node seeds/index.js"
   },
   "name": "penguin-post",
-  "description": "",
+  "description": "PenguinPost is a short-post social media site.",
   "version": "1.0.0",
   "main": "server.js",
   "repository": {
@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/Chewbakkah/penguin-post/issues"
   },
-  "homepage": "https://github.com/Chewbakkah/penguin-post#readme"
+  "homepage": "https://github.com/Chewbakkah/penguin-post#readme",
+  "devDependencies": {}
 }
