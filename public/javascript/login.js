@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace("/");
+        document.location.replace("/dashboard/");
       } else {
         alert(response.statusText);
       }
@@ -23,6 +23,7 @@ async function loginFormHandler(event) {
   }
   
   async function signupFormHandler(event) {
+    console.log("signup initiated");
     event.preventDefault();
   
     const username = document.querySelector("#username-signup").value.trim();
@@ -32,6 +33,7 @@ async function loginFormHandler(event) {
     // const hero = "https://www.tammybaldwin.com/wp-content/uploads/2011/09/placeholder.png";
   
     if (username && email && password) {
+      console.log(username);
       const response = await fetch("/api/users", {
         method: "post",
         body: JSON.stringify({
@@ -43,9 +45,15 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        
+        console.log('got a response');
+        req.session.save(() => {
+          req.session.user_id = dbUserData.id;
+          req.session.username = dbUserData.username;
+          req.session.loggedIn = true;});
         document.location.replace("/");
+        console.log("this happened");
       } else {
+        console.log('response was not ok');
         alert(response.statusText);
       }
     }
@@ -55,7 +63,5 @@ async function loginFormHandler(event) {
     .querySelector(".login-form")
     .addEventListener("submit", loginFormHandler);
   
-  document
-    .querySelector(".signup-form")
-    .addEventListener("submit", signupFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
   
