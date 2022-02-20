@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace("/dashboard");
+        document.location.replace("/");
       } else {
         alert(response.statusText);
       }
@@ -28,6 +28,8 @@ async function loginFormHandler(event) {
     const username = document.querySelector("#username-signup").value.trim();
     const email = document.querySelector("#email-signup").value.trim();
     const password = document.querySelector("#password-signup").value.trim();
+    // const icon = 1;
+    // const hero = "https://www.tammybaldwin.com/wp-content/uploads/2011/09/placeholder.png";
   
     if (username && email && password) {
       const response = await fetch("/api/users", {
@@ -41,6 +43,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
+        
         document.location.replace("/");
       } else {
         alert(response.statusText);
