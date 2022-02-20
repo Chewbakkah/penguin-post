@@ -1,0 +1,26 @@
+<header>
+  <div class="container">
+    <div class="row header-holder">
+      <div class="left-header col-md-6"><img src="/img/txt-logo.png" /></div>
+      <div class="right-header col-md-6">
+        <nav>
+          {{#if loggedIn}}
+          <a href="/dashboard">Dashboard</a>
+          <a href="/settings">Settings</a>
+            <button id="logout" class="btn-no-style">LOGOUT</button>
+          {{else}}
+            <a href="/login">
+              <button id="login" class="btn-no-style">LOGIN</button>
+            </a>
+          {{/if}}
+
+        </nav>
+      </div>
+    </div>
+  </div>
+  {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+  {{else}}
+    <script src="/javascript/login.js"></script>
+  {{/if}}
+</header>
