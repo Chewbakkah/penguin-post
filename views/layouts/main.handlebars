@@ -6,31 +6,20 @@
     <title>PenguinPost</title>
     <link rel="icon" type="image/x-icon" href="/public/img/favicon.png" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
 
   <body>
     <div class="wrapper">
-      {{#if loggedIn}}
-        <header>
-          <img src="/public/img/Txt-Logo.png" />
-          <nav>
-            <a href="/dashboard">dashboard</a>
-            <a href="/settings">settings</a>
-            <button id="logout" class="btn-no-style">logout</button>
-          </nav>
-        </header>
-      {{/if}}
+      {{!-- {{> header }}       --}}
       <main>
         {{{body}}}
       </main>
-      <footer>
-        <img src="/public/img/Txt-Tagline.png" />
-      </footer>
+      {{!-- {{> footer }}       --}}
     </div>
-
-    {{#if loggedIn}}
+    {{!-- {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
-    {{/if}}
+    {{/if}} --}}
   </body>
 
 </html>
