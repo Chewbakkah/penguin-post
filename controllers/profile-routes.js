@@ -5,6 +5,7 @@ const withAuth = require('../utils/auth');
 
 async function getUserPosts(id) {
     console.log('getUserPosts called');
+    //getting stuck here!!!!!!!!!!!!!
     router.get('/', (req, res) => {
         console.log('router passed');
         console.log(id);
