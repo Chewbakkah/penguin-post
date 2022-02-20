@@ -11,27 +11,15 @@
 
   <body>
     <div class="wrapper">
-      {{#if loggedIn}}
-        <header>
-          <img src="/img/txt-logo.png" />
-          <nav>
-            <a href="/dashboard">dashboard</a>
-            <a href="/settings">settings</a>
-            <button id="logout" class="btn-no-style">logout</button>
-          </nav>
-        </header>
-      {{/if}}
+      {{!-- {{> header }}       --}}
       <main>
         {{{body}}}
       </main>
-      <footer>
-        <img src="/img/txt-tagline.png" alt="We are the Waddle" />
-      </footer>
+      {{!-- {{> footer }}       --}}
     </div>
-
-    {{#if loggedIn}}
+    {{!-- {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
-    {{/if}}
+    {{/if}} --}}
   </body>
 
 </html>
