@@ -24,23 +24,6 @@ router.get('/:id', (req, res) => {
         model: Post,
         attributes: ['id', 'post_content', 'created_at']
       },
-<<<<<<< Updated upstream
-=======
-      // {
-      //   model: Comment,
-      //   attributes: ['id', 'comment_text', 'created_at'],
-      //   include: {
-      //     model: Post,
-      //     attributes: ['title']
-      //   }
-      // },
-      {
-        model: Post,
-        attributes: ['title'],
-        through: Favorite,
-        as: 'favorite_posts'
-      }
->>>>>>> Stashed changes
     ]
   })
     .then(dbUserData => {
