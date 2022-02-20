@@ -114,10 +114,20 @@ a:hover {
     padding-bottom: 20px;
 }
 
-form {
+.login-right form {
     text-align: right;
     color:#ffffff;
 }
 form input {
     color:#252524;
+}
+
+li {
+  list-style-type: none;
+}
+.post-holder {
+  padding: 10px
+}
+.post {
+  font-size: 2rem;
 }

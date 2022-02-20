@@ -5,16 +5,13 @@ const withAuth = require('../utils/auth');
 
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-  console.log(req.session);
-  console.log('======================');
   Post.findAll({
-    where: {
-      user_id: req.session.user_id
-    },
+    // where: {
+    //   user_id: req.session.user_id
+    // },
     attributes: [
       'id',
       'post_content',
-      'title',
       'created_at'
     ],
     include: [
@@ -22,11 +19,11 @@ router.get('/', withAuth, (req, res) => {
         model: User,
         attributes: ['username']
       }
-    ]
+    ],
+    order: sequelize.literal('created_at DESC'),
+    limit: 25,
   })
     .then(dbPostData => {
-      console.log('you got this far');
-      console.log(dbPostData);
       const posts = dbPostData.map(post => post.get({ plain: true }));
       res.render('dashboard', { posts, loggedIn: true });
     })
@@ -41,7 +38,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
     attributes: [
       'id',
       'post_content',
-      'title',
       'created_at',
     ],
     include: [

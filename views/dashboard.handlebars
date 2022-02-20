@@ -1,5 +1,27 @@
 {{> header }}
-<div>this is the dashboard #winsauce</div>
+<div>this is the dashboard</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 nav-area">
+      <button type="submit">Direct Message</button>
+      <button type="submit">Friend List</button>
+      <div class="trending">Trending Goes Here</div>
+      <form class="search">
+            <div>
+              <input type="text" id="search" placeholder="Search" />
+            </div>
+            </form>
+
+
+    </div>
+    <div class="col-md-9 post-area">
+<form class="new-post-form">
+    <div>
+      <label for="post">New Squawk</label>
+      <input type="text" id="post-content" name="post-content" />
+    </div>
+    <button type="submit" class="btn">sQuaWk!</button>
+    </form>
 <ol class="post-list">
   {{#each posts as |post|}}
   <li>
@@ -7,4 +29,11 @@
   </li>
   {{/each}}
 </ol>
+
+
+    </div>
+  </div>
+</div>
+
 {{> footer }}
+<script src="/javascript/add-post.js"></script>

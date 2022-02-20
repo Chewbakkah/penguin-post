@@ -11,12 +11,8 @@ class Post extends Model {}
             primaryKey: true,
             autoIncrement: true
           },
-          title: {
-            type: DataTypes.STRING,
-            allowNull: false
-          },
           post_content: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(281),
             allowNull: false,
             validate: {
               len: [2]

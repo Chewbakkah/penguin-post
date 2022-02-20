@@ -4,8 +4,6 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
-    console.log(req.session);
-    console.log('======================');
     User.findOne({
       where: {
         id: req.session.user_id
@@ -17,8 +15,6 @@ router.get('/', withAuth, (req, res) => {
       ]
     })
       .then(dbUserData => {
-          console.log('you got this far');
-          console.log(dbUserData);
         const userInfo = dbUserData.attributes;
         res.render('settings', { userInfo, loggedIn: true });
       })
