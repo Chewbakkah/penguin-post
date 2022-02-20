@@ -76,7 +76,7 @@ router.post('/', (req, res) => {
 });
 
 router.post('/login', (req, res) => {
-
+console.log("login route called");
   User.findOne({
     where: {
       email: req.body.email

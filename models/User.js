@@ -37,11 +37,11 @@ User.init(
     },
     icon: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     hero: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         isURL: true,
       },
