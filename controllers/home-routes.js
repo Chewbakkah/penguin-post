@@ -11,6 +11,7 @@ if(req.session.loggedIn){
     };
 });
 
+
 // Creating route to GET single post
 // Question on line 80
 // router.get('/post/:id', (req, res) => {
