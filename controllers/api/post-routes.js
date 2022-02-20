@@ -5,7 +5,11 @@ const withAuth = require('../../utils/auth');
 // get all posts
 router.get('/', (req, res) => {
 Post.findAll({
+<<<<<<< Updated upstream
   attributes: ['id', 'post_content', 'created_at'],
+=======
+  attributes: ['id', 'post_content', 'title', 'created_at'],
+>>>>>>> Stashed changes
   order: [['created_at', 'DESC']], 
   include: [
     {
@@ -26,6 +30,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
+<<<<<<< Updated upstream
     attributes: ['id', 'post_content', 'created_at'],
     include: [
       {
@@ -33,6 +38,15 @@ router.get('/:id', (req, res) => {
         attributes: ['username']
       }
     ]
+=======
+    attributes: ['id', 'post_content', 'title', 'created_at'],
+    // include: [
+    //   {
+    //     model: User,
+    //     attributes: ['username']
+    //   }
+    // ]
+>>>>>>> Stashed changes
   })
     .then(dbPostData => {
       if (!dbPostData) {
