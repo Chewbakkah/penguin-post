@@ -52,4 +52,24 @@ router.post('/', (req, res) => {
     }
 });
 
+
+router.delete('/:id', (req, res) => {
+    Favorite.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbFavoriteData => {
+        if (!dbFavoriteData) {
+          res.status(404).json({ message: 'You have not favorited this post' });
+          return;
+        }
+        res.json(dbFavoriteData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
 module.exports = router;
