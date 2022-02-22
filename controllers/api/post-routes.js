@@ -3,6 +3,8 @@ const { Post, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all posts
+
+
 router.get('/', (req, res) => {
 Post.findAll({
   attributes: ['id', 'post_content', 'created_at'],
