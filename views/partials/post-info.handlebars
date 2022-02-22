@@ -3,7 +3,7 @@
     {{post_content}}
   </div>
   <div class="meta">
-    by <a href="/profile/{{user.id}}"><b>{{user.username}}</b></a> on {{format_date created_at}}
+    {{#if user.username}}by <a href="/profile/{{user.id}}"><b>{{user.username}}</b></a>{{/if}} on {{format_date created_at}}
   </div>
 </article>
 

@@ -18,10 +18,10 @@ router.get('/:id', withAuth, (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ['id', 'post_content', 'created_at'],
+          attributes: ['id', 'post_content', 'user_id', 'created_at'],
           order: sequelize.literal('created_at DESC'),
           limit: 25,
-        },
+        }
       ]
       
     })
