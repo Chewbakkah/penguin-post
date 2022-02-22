@@ -12,7 +12,7 @@ Post.findAll({
   include: [
     {
       model: User,
-      attributes: ['username']
+      attributes: ['username','icon']
     }
   ]
 })
@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username', 'icon']
       }
     ]
   })

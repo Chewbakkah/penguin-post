@@ -1,3 +1,39 @@
 {{> header }}
-<div> This is the settings </div>
+<h1>User Settings</h1>
+Username: {{user.username}}<br />
+<form class="new-username">
+            <div>
+              <label for="username-update">New Username:</label>
+              <input type="text" id="username-update" />
+              <input type="hidden" id="user_id" value="{{user.id}}">
+            </div>
+            <div>
+              <button type="submit">UPDATE</button>
+            </div>
+            </form><br />
+Icon: <img class="settings-icon" src="{{user.icon}}"/><br />
+<form class="new-icon">
+            <div>
+              <label for="icon-update">New Icon:</label>
+              <input type="text" id="icon-update" />
+              <input type="hidden" id="user_id" value="{{user.id}}">
+            </div>
+            <div>
+              <button type="submit">UPDATE</button>
+            </div>
+            </form>
+Hero:<br /><img class="settings-hero" src="{{user.hero}}"/>
+<form class="new-hero">
+            <div>
+              <label for="hero-update">New Hero:</label>
+              <input type="text" id="hero-update" />
+              <input type="hidden" id="user_id" value="{{user.id}}">
+            </div>
+            <div>
+              <button type="submit">UPDATE</button>
+            </div>
+            </form>
 {{> footer }}
+
+<script src="/javascript/settings.js"></script>
+
