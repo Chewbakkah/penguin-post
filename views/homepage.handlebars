@@ -3,6 +3,7 @@
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
+    {{ post.favorite_count}} Favorites
   </li>
   {{/each}}
 </ol>

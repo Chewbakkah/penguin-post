@@ -6,12 +6,13 @@ const withAuth = require('../utils/auth');
 router.get('/:id', withAuth, (req, res) => {
   Post.findAll({
     where: {
-      user_id: req.session.user_id
+      user_id: req.params.id
     },
     attributes: [
       'id',
       'post_content',
-      'created_at'
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM favorite WHERE post.id = favorite.post_id)'), 'favorite_count']
     ],
     include: [
       {
