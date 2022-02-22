@@ -9,14 +9,17 @@ router.get('/', withAuth, (req, res) => {
         id: req.session.user_id
       },
       attributes: [
+        'id',
         'username',
         'icon',
         'hero'
       ]
     })
       .then(dbUserData => {
-        const userInfo = dbUserData.attributes;
-        res.render('settings', { userInfo, loggedIn: true });
+        // console.log(dbUserData);
+        const user = dbUserData.dataValues;
+        console.log(user);
+        res.render('settings', { user, loggedIn: true });
       })
       .catch(err => {
         console.log(err);
