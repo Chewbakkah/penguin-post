@@ -1,1 +1,10 @@
-<div> This is the profile </div>
+{{> header }}
+<div> This is the profile of {{userInfo.username}}</div>
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
+{{> footer }}
