@@ -131,3 +131,16 @@ li {
 .post {
   font-size: 2rem;
 }
+
+.error-page {
+  text-align: center;
+  margin: 0;
+}
+
+.error-page img {
+  padding-top: 5%;
+  max-width: 40%;
+}
+.post-icon {
+  max-width: 50px;
+}

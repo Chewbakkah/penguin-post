@@ -1,8 +1,10 @@
 <article class="post-holder">
+  <div><img class="post-icon" src="{{user.icon}}"/></div><div>
   <div class="post">
     {{post_content}}
   </div>
   <div class="meta">
-    by <b>{{user.username}}</b> on {{format_date created_at}}
-  </div>
+    {{#if user.username}}by <a href="/profile/{{user.id}}"><b>{{user.username}}</b></a>{{/if}} on {{format_date created_at}}
+  </div></div>
 </article>
+

@@ -3,6 +3,8 @@ const { Post, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all posts
+
+
 router.get('/', (req, res) => {
 Post.findAll({
   attributes: ['id', 'post_content', 'created_at'],
@@ -10,7 +12,7 @@ Post.findAll({
   include: [
     {
       model: User,
-      attributes: ['username']
+      attributes: ['username','icon']
     }
   ]
 })
@@ -30,7 +32,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username', 'icon']
       }
     ]
   })
