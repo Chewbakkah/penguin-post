@@ -1,9 +1,7 @@
 {{> header }}
 <section class="dashboard container">
   <div class="row">
-<div class="col-md-3 icecube">
-  <img src="/img/pengiun-ice.png" />
-</div>
+
     <div class="col-md-9">
 <ol class="post-list">
   {{#each posts as |post|}}
@@ -12,6 +10,12 @@
   </li>
   {{/each}}
 </ol>
-</div></div>
+</div>
+<div class="col-md-3 d-flex flex-column">
+  <div class="mt-auto p-2">
+  <img class="home-cube" src="/img/pengiun-ice.png" />
+  </div>
+</div>
+</div>
 </section>
 {{> footer }}
