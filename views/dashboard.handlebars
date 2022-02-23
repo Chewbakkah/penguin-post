@@ -2,16 +2,19 @@
 {{> header }}
 <div class="container dashboard">
   <div class="row">
-    <div class="col-md-3 nav-area">
-      <div class="friends-list"><h3>Friends</h3>
+    <div class="col-md-3 nav-area  d-flex flex-column">
+      <div class="friends-list p-2"><h3>Friends</h3>
       {{> friends}}      
       </div>
       
-      <form class="search-form">
+      <form class="search-form p-2">
         <input type="text" id="search" placeholder="Search" />
         <button type="submit">0&gt;</button>
       </form>
-
+      
+      <div class="icecube mt-auto p-2">
+        <img src="/img/pengiun-ice.png" />
+      </div>
 
     </div>
     <div class="col-md-9 post-area">
@@ -19,7 +22,7 @@
     <h2>New Squawk</h2>
     <textarea style="color: #252524" class="post-text" name="post-content" id="post-content" cols="80" rows="2" maxlength="281" placeholder="Tell 'Em All About It"></textarea>
     <div class="count" id="count">&nbsp;</div>
-    <button type="submit" class="btn">sQuaWk!</button>
+    <button type="submit">sQuaWk!</button>
     </form>
 <ol class="post-list">
   {{#each posts as |post|}}

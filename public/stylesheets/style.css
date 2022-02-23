@@ -72,13 +72,16 @@ button {
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
-    width: 15rem;
+    width: 12rem;
   }
 
 button:hover {
     background-color: #D1E0FF;
     border: 1 solid #ffffff;
   }
+.login-holder {
+  height: 100%;
+}
 
 .login-left {
     background-image: url("/img/login-background.jpg");
@@ -129,11 +132,18 @@ form input {
 li {
   list-style-type: none;
 }
+.post-row {
+  padding: 5px
+}
+.icon-holder {
+  padding-top: 30px;
+}
 .post-holder {
-  padding: 10px
+  padding-top: 20px;
+  padding-right: 20px;
 }
 .post {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .error-page {
@@ -150,18 +160,17 @@ li {
 }
 .search-form {
   padding-top: 10px;
-  display: flex;
+}
+.friends-list {
+
 }
 .search-form input {
   max-width: 80%;
-  display: inline-flex;
-  min-height: 4rem;
+  height: 3rem;
 }
 .search-form button {
   max-width: 15%;
-  display: inline-flex;
-  
-  padding: 1rem;
+  height: 3rem;
 }
 .post-area {
   padding: 3%;
@@ -171,9 +180,24 @@ textarea {
   /* color: #252524; */
   /* color has to be defined in the handlebars html */
 }
+.new-post-form button {
+  padding: 1%;
+}
 .nav-area {
   padding-top: 3%;
 }
 .count {
+  color: #ffffff;
+}
+.icecube img {
+  /* padding-top: 200%; */
+  max-width: 40%;
+}
+.icecube {
+  position: fixed;
+  bottom: 0;
+  max-width: 100%;
+}
+.copyright {
   color: #ffffff;
 }
