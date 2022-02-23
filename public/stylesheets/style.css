@@ -208,3 +208,23 @@ textarea {
 .home-cube {
   max-width: 100%;
 }
+.settings-holder {
+  padding: 5%;
+}
+.settings-holder button {
+  padding: 1%;
+}
+.settings-holder input {
+  padding: 3px;
+  margin: 5px;
+}
+.new-icon-img {
+  text-align: left;
+  padding-top: 3%;
+}
+.settings-icon {
+  max-width: 15%;
+}
+.settings-hero {
+  max-width: 70%;
+}
