@@ -4,27 +4,21 @@
   <div class="row">
     <div class="col-md-3 nav-area">
       <div class="friends-list"><h3>Friends</h3>
-      {{> friends}}
-      
+      {{> friends}}      
       </div>
       
       <form class="search-form">
-        
-              <input type="text" id="search" placeholder="Search" />
-           
-            <button type="submit">0&gt;</button>
-            </form>
+        <input type="text" id="search" placeholder="Search" />
+        <button type="submit">0&gt;</button>
+      </form>
 
 
     </div>
     <div class="col-md-9 post-area">
 <form class="new-post-form">
-    {{!-- <div>
-      <label for="post">New Squawk</label>
-      <input type="text" id="post-content" name="post-content" />
-    </div> --}}
     <h2>New Squawk</h2>
-    <textarea style="color: #252524" class="post-text" name="post-content" cols="40" rows="5"></textarea>
+    <textarea style="color: #252524" class="post-text" name="post-content" id="post-content" cols="80" rows="2" maxlength="281" placeholder="Tell 'Em All About It"></textarea>
+    <div class="count" id="count">&nbsp;</div>
     <button type="submit" class="btn">sQuaWk!</button>
     </form>
 <ol class="post-list">
@@ -42,4 +36,5 @@
 
 {{> footer }}
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/text-count.js"></script>
 </section>

@@ -63,7 +63,7 @@ a:hover {
     color: #D1E0FF;
   }
 
-  button {
+button {
     background-color: #8CBDFF;
     border: 1 solid #000000;
     padding: 3%;
@@ -75,7 +75,7 @@ a:hover {
     width: 15rem;
   }
 
-  button:hover {
+button:hover {
     background-color: #D1E0FF;
     border: 1 solid #ffffff;
   }
@@ -164,10 +164,16 @@ li {
   padding: 1rem;
 }
 .post-area {
-  padding: 5%;
+  padding: 3%;
 }
 textarea {
   padding: 5px;
   /* color: #252524; */
   /* color has to be defined in the handlebars html */
+}
+.nav-area {
+  padding-top: 3%;
+}
+.count {
+  color: #ffffff;
 }
