@@ -8,6 +8,7 @@ const hbs = exphbs.create({ helpers });
 const app = express();
 const PORT = process.env.PORT || 3003;
 const session = require('express-session');
+// const { clear } = require('console');
 // const { config } = require('dotenv');
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);

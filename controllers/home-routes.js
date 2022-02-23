@@ -7,7 +7,8 @@ router.get('/', (req, res) => {
     Post.findAll({
       attributes: [
         'id',
-        'post_content'
+        'post_content',
+        [sequelize.literal('(SELECT COUNT(*) FROM favorite WHERE post.id = favorite.post_id)'), 'favorite_count']
       ],
       include: [
         {
