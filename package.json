@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nodemon": "^2.0.3",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^16.0.0",
