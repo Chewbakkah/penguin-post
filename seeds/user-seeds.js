@@ -8,7 +8,7 @@ const userData = [
       password: 'pass',
       icon: '1',
       hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg', 
-      friends: {}
+      friends: 'who dis'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const userData = [
         password: 'pass',
         icon: '1',
         hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-        friends: {}
+        friends: 'who dis'
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const userData = [
         password: 'pass',
         icon: '1',
         hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-        friends: {}
+        friends: 'who dis'
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const userData = [
         password: 'pass',
         icon: '1',
         hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-        friends: {}
+        friends: 'who dis'
     },
     {
         id: 5,
@@ -44,7 +44,7 @@ const userData = [
         password: 'pass',
         icon: '1',
         hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-        friends: {}
+        friends: 'who dis'
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ const userData = [
         password: 'pass',
         icon: '1',
         hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-        friends: {}
+        friends: 'who dis'
     }
   ];
 

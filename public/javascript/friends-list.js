@@ -1,17 +1,15 @@
-async function showFriends() {
-    const response = await fetch(`/api/users/${user_id}`, {
-        method: "GET",
-        body: JSON.stringify({
-          friends,
-        }),
-        headers: { "Content-Type": "application/json" },
-      });
-  
-    if (response.ok) {
-        console.log(response)
-    } else {
-      alert(response.statusText);
-    }
-  }
 
-  document.querySelector('friend-list').addEventListener('click', showFriends);
+async function showFriends() {
+  let url = `/api/users/2`;
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((err) => {
+      throw err;
+    });
+}
+
+document.querySelector(".friend-list").addEventListener("click", showFriends);
