@@ -1,3 +1,79 @@
+// const router = require('express').Router();
+// const sequelize = require('../config/connection');
+// const { Post, User, Comment, Favorite } = require('../models');
+// const withAuth = require('../utils/auth');
+
+// // get all posts for dashboard
+// router.get('/', withAuth, (req, res) => {
+//   Post.findAll({
+//     // where: {
+//     //   user_id: req.session.user_id
+//     // },
+//     attributes: [
+//       'id',
+//       'post_content',
+//       'created_at'
+//     ],
+//     include: [
+//       {
+//         model: User,
+//         attributes: [
+//           'username',
+//           'id',
+//           'icon',
+//           'friends'
+//         ]
+//       }
+//     ],
+//     order: sequelize.literal('created_at DESC'),
+//     limit: 25,
+//   })
+//     .then(dbPostData => {
+//       const posts = dbPostData.map(post => post.get({ plain: true }));
+//       console.log(dbPostData);
+//       res.render('dashboard', { posts, loggedIn: true });
+//     })
+//     .catch(err => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
+
+// router.get('/edit/:id', withAuth, (req, res) => {
+//   Post.findByPk(req.params.id, {
+//     attributes: [
+//       'id',
+//       'post_content',
+//       'created_at',
+//     ],
+//     include: [
+//       {
+//         model: User,
+//         attributes: ['username']
+//       }
+//     ]
+//   })
+//     .then(dbPostData => {
+//       if (dbPostData) {
+//         const post = dbPostData.get({ plain: true });
+        
+//         res.render('edit-post', {
+//           post,
+//           loggedIn: true
+//         });
+//       } else {
+//         res.status(404).end();
+//       }
+//     })
+//     .catch(err => {
+//       res.status(500).json(err);
+//     });
+// });
+
+
+// module.exports = router;
+
+
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment, Favorite } = require('../models');
@@ -24,12 +100,23 @@ router.get('/', withAuth, (req, res) => {
         ]
       }
     ],
+    include: [{
+      model: User,
+      attributes: [
+        'friends'
+      ],
+      where: {
+            user_id: req.session.user_id
+      }
+      }
+    ],
     order: sequelize.literal('created_at DESC'),
     limit: 25,
   })
     .then(dbPostData => {
+      console.log(dbPostData);
       const posts = dbPostData.map(post => post.get({ plain: true }));
-      console.log(posts);
+      // console.log(posts);
       res.render('dashboard', { posts, loggedIn: true });
     })
     .catch(err => {
@@ -85,3 +172,5 @@ router.get('/edit/:id', withAuth, (req, res) => {
 
 
 module.exports = router;
+
+

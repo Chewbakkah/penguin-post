@@ -1,6 +1,6 @@
 
 async function showFriends() {
-  let route = `/api/users/2`;
+  let route = `/api/users/1`;
 
   fetch(route)
     .then((res) => res.json())
