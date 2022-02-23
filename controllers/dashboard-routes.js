@@ -28,6 +28,7 @@ router.get('/', withAuth, (req, res) => {
     limit: 25,
   })
     .then(dbPostData => {
+      console.log(dbPostData);
       const posts = dbPostData.map(post => post.get({ plain: true }));
       console.log(posts);
       res.render('dashboard', { posts, loggedIn: true });

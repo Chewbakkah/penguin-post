@@ -144,3 +144,13 @@ li {
 .post-icon {
   max-width: 50px;
 }
+.search-form {
+  padding-top: 10px;
+  display: inline;
+}
+.search-form input {
+  max-width: 80%;
+}
+.search-form button {
+  max-width: 10%;
+}
