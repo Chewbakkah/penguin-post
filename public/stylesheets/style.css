@@ -149,11 +149,15 @@ li {
 .error-page {
   text-align: center;
   margin: 0;
+  background-color: #252524;
 }
 
 .error-page img {
   padding-top: 5%;
-  max-width: 40%;
+  max-width: 30%;
+}
+.error-page h2 {
+  color: #ffffff;
 }
 .post-icon {
   max-width: 50px;
