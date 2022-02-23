@@ -49,7 +49,11 @@ User.init(
       validate: {
         isURL: true,
       },
-    },
+    }, 
+    friends: {
+        type: DataTypes.JSON,
+        allowNull: true,
+      },
   },
   {
     hooks: {

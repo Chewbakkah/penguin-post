@@ -7,7 +7,8 @@ const userData = [
       email: 'cheyne@mail.com',
       password: 'pass',
       icon: '1',
-      hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg'
+      hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg', 
+      friends: {}
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const userData = [
         email: 'mario@mail.com',
         password: 'pass',
         icon: '1',
-        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg'
+        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
+        friends: {}
     },
     {
         id: 3,
@@ -23,7 +25,8 @@ const userData = [
         email: 'cory@mail.com',
         password: 'pass',
         icon: '1',
-        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg'
+        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
+        friends: {}
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ const userData = [
         email: 'jeff@mail.com',
         password: 'pass',
         icon: '1',
-        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg'
+        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
+        friends: {}
     },
     {
         id: 5,
@@ -39,7 +43,8 @@ const userData = [
         email: 'court@mail.com',
         password: 'pass',
         icon: '1',
-        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg'
+        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
+        friends: {}
     },
     {
         id: 6,
@@ -47,7 +52,8 @@ const userData = [
         email: 'hamilton@mail.com',
         password: 'pass',
         icon: '1',
-        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg'
+        hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
+        friends: {}
     }
   ];
 
