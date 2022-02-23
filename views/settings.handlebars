@@ -8,8 +8,10 @@ Username: {{user.username}}<br />
 <form class="new-username">
             <div>
               <label for="username-update">New Username:</label>
+              <div class="input-holder">
               <input type="text" id="username-update" />
               <input type="hidden" id="user_id" value="{{user.id}}">
+              </div>
             </div>
             <div>
               <button type="submit">UPDATE</button>
@@ -19,12 +21,13 @@ Username: {{user.username}}<br />
             <br />
             <div class="new-icon-holder row">
               <div class="new-icon-input col-md-5">
-Icon: <br />
 <form class="new-icon">
             <div>
               <label for="icon-update">New Icon:</label>
+              <div class="input-holder">
               <input type="text" id="icon-update" />
               <input type="hidden" id="user_id" value="{{user.id}}">
+              </div>
             </div>
             <div>
               <button type="submit">UPDATE</button>
@@ -35,12 +38,13 @@ Icon: <br />
             </div></div>
 <div class="new-hero-holder row">
 <div class="new-hero-input col-md-5">
-Hero:<br />
 <form class="new-hero">
             <div>
               <label for="hero-update">New Hero:</label>
+              <div class="input-holder">
               <input type="text" id="hero-update" />
               <input type="hidden" id="user_id" value="{{user.id}}">
+              </div>
             </div>
             <div>
               <button type="submit">UPDATE</button>

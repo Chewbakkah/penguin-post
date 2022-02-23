@@ -1,6 +1,17 @@
 {{> header }}
-<img class="hero" src="{{user.hero}}"/>
-<div> This is the profile of {{user.username}}</div>
+<section class="container dashboard">
+<div class="profile-hero">
+  <img src="{{user.hero}}"/>
+</div>
+<div class="row profile-holder">
+<div class="col-md-4 profile-nav">
+<h2>{{user.username}}</h2>
+<button type="submit">ADD FRIEND</button>
+<img class="profile-cube" src="/img/pengiun-ice.png" />
+</div>
+<div class="col-md-8 profile-posts">
+
+
 <ol class="post-list">
   {{#each posts as |post|}}
   <li>
@@ -8,4 +19,12 @@
   </li>
   {{/each}}
 </ol>
+
+
+
+
+
+</div>
+</div>
+</section>
 {{> footer }}
