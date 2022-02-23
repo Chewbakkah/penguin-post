@@ -50,6 +50,10 @@ User.init(
         isURL: true,
       },
     },
+    friends: {
+        type: DataTypes.JSON,
+        allowNull: true,
+      },
   },
   {
     hooks: {
