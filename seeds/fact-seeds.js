@@ -91,7 +91,7 @@ const factData = [
     },
     {
         id: 23,
-        fact: "If a female Emperor Penguin's baby dies, she will often "kidnap" an unrelated chick."
+        fact: "If a female Emperor Penguin's baby dies, she will often kidnap an unrelated chick."
     },
     {
         id: 24,
@@ -143,7 +143,7 @@ const factData = [
     },
     {
         id: 36,
-        fact: "A penguin’s thick feathers aren’t the only way this bird stays warm. A gland near the base of its tail provides waterproof oil. Penguins spend several hours each day covering their feathers with this oil and give extra attention to the task before swimming."
+        fact: "A penguin’s thick feathers are not the only way this bird stays warm. A gland near the base of its tail provides waterproof oil. Penguins spend several hours each day covering their feathers with this oil and give extra attention to the task before swimming."
     },
     {
         id: 37,
@@ -231,7 +231,7 @@ const factData = [
     },
     {
         id: 58,
-        fact: "Explorers first called them "strange geese."
+        fact: "Explorers first called them "strange geese"."
     },
     {
         id: 59,
@@ -311,7 +311,7 @@ const factData = [
     },
     {
         id: 78,
-        fact: "In 2018, the smelly giveaway of penguin poop revealed a 1.5 million member "super-colony" of Adelie penguins in the Danger Islands."
+        fact: "In 2018, the smelly giveaway of penguin poop revealed a 1.5 million member super-colony of Adelie penguins in the Danger Islands."
     },
     {
         id: 79,
@@ -371,210 +371,121 @@ const factData = [
     },
     {
         id: 93,
-        fact: " ."
+        fact: "When the chick hatches, it immediately starts calling so that its parents will learn to recognize its voice."
     },
     {
         id: 94,
-        fact: " ."
+        fact: "Penguins can’t fly, they swim."
     },
     {
         id: 95,
-        fact: " ."
+        fact: "The Linux mascot, Tux, is a penguin."
     },
     {
         id: 96,
-        fact: " ."
+        fact: "Penguin chicks have fluffy feathers."
     },
     {
         id: 97,
-        fact: " ."
+        fact: "The collective name for a group of penguins is called colonies or rookery."
     },
     {
         id: 98,
-        fact: " ."
+        fact: "Penguins usually move in large groups to keep warm."
     },
     {
         id: 99,
-        fact: " ."
+        fact: "Penguins can jump 6 feet out of water."
     },
     {
         id: 100,
-        fact: " ."
+        fact: "Penguins live in the Southern Hemisphere."
     },
     {
         id: 101,
-        fact: " ."
+        fact: "Most penguins can swim about 15 miles per hour."
     },
     {
         id: 102,
-        fact: " ."
+        fact: "enguins have insulating layers of air, skin, and blubber."
     },
     {
         id: 103,
-        fact: " ."
+        fact: "They are ancient species that first appeared around 40 million years ago."
     },
     {
         id: 104,
-        fact: " ."
+        fact: "There are 17 different species of penguins in the world, the most commonly recognized being the Emperor penguin."
     },
     {
         id: 105,
-        fact: " ."
+        fact: "The first penguin fossil to be discovered was found in rocks that were around 25 million years old."
     },
     {
         id: 106,
-        fact: " ."
+        fact: "A prehistoric skeleton of a penguin was found and is bigger than any living penguin that exists, it is believed they were up to 5ft tall (1.5 meters)."
     },
     {
         id: 107,
-        fact: " ."
+        fact: "The four penguins in the film Madagascar are named Skipper, Kowalski, Rico, and Private."
     },
     {
         id: 108,
-        fact: " ."
+        fact: "Their white bellies blend with the snow and sunlight making it difficult for an underwater predator to see them."
     },
     {
         id: 109,
-        fact: " ."
+        fact: "About 75% of a penguin’s life is spent in water, where they do all their hunting."
     },
     {
         id: 110,
-        fact: " ."
+        fact: "Penguins use their wings for swimming."
     },
     {
         id: 111,
-        fact: " ."
+        fact: "In general, a penguin’s lifespan ranges from 15 to 20 years."
     },
     {
         id: 112,
-        fact: " ."
+        fact: "The first bird actually called a penguin was the now-extinct Great Auk found in the North Atlantic. Tragically, early explorers and their contemporaries found Great Auks a little too tasty, and the birds were all killed off."
     },
     {
         id: 113,
-        fact: " ."
+        fact: "Fossil evidence shows that penguins evolved before the dinosaurs died out, and there are remains of giant, people-sized, prehistoric penguins."
     },
     {
         id: 114,
-        fact: " ."
+        fact: "The world’s smallest penguins are the Little Blue penguins. They are just over 30cm high on their flippers."
     },
     {
         id: 115,
-        fact: " ."
+        fact: "All wild penguins live in the Southern Hemisphere, and although they are synonymous with the ice, only two species live on the continent of Antarctica."
     },
     {
         id: 116,
-        fact: " ."
+        fact: "The Galapagos penguin is the only penguin that ever naturally ventures into the Northern Hemisphere on especially long feeding trips."
     },
     {
         id: 117,
-        fact: " ."
+        fact: "Most penguins have black backs and a white belly. This makes them harder to see from above because they blend in with the dark ocean beneath them. Below, their white underside matches the bright sky overhead."
     },
     {
         id: 118,
-        fact: " ."
+        fact: "Penguins’ black and white ‘tuxedo’ helps them avoid predators."
     },
     {
         id: 119,
-        fact: " ."
+        fact: "You’ll only find wild penguins in the Southern Hemisphere."
     },
     {
-        id: 110,
-        fact: " ."
+        id: 120,
+        fact: "To move fast through the water, penguins use a technique called porpoising. They swim underwater about 12 km/hour and then thrust out of the water about every 30 to 50 meters and fly a half of a second through the air."
     },
     {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-    {
-        id: ,
-        fact: " ."
-    },
-
-    //Remove the last comma from the last fact on },
+        id: 121,
+        fact: "Penguins lay on their stomach and propelling themselves horizontally, sliding across the ice and snow using its flippers and feet for propulsion, steering, and braking."
+    }
+    
 ];
 
 const seedFact = () => Fact.bulkCreate(factData);
