@@ -1,8 +1,8 @@
 
 async function showFriends() {
-  let url = `/api/users/2`;
+  let route = `/api/users/2`;
 
-  fetch(url)
+  fetch(route)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
