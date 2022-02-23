@@ -6,54 +6,54 @@ const userData = [
         username: 'cheyne',
         email: 'cheyne@mail.com',
         password: 'pass',
-        icon: '1',
+        icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILhhXThYT2otEtbmWWX9tdfybFEnh_SCY8A&usqp=CAU',
         hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg', 
-        friends: 'who dis'
+        friends: {id: 2, username: 'mario'}
       },
       {
           id: 2,
           username: 'mario',
           email: 'mario@mail.com',
           password: 'pass',
-          icon: '1',
+          icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILhhXThYT2otEtbmWWX9tdfybFEnh_SCY8A&usqp=CAU',
           hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-          friends: 'who dis'
+          friends: {id: 1, username: 'cheyne'}
       },
       {
           id: 3,
           username: 'cory',
           email: 'cory@mail.com',
           password: 'pass',
-          icon: '1',
+          icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILhhXThYT2otEtbmWWX9tdfybFEnh_SCY8A&usqp=CAU',
           hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-          friends: 'who dis'
+          friends: {id: 2, username: 'mario'}
       },
       {
           id: 4,
           username: 'jeff',
           email: 'jeff@mail.com',
           password: 'pass',
-          icon: '1',
+          icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILhhXThYT2otEtbmWWX9tdfybFEnh_SCY8A&usqp=CAU',
           hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-          friends: 'who dis'
+          friends: {id: 2, username: 'mario'}
       },
       {
           id: 5,
           username: 'court',
           email: 'court@mail.com',
           password: 'pass',
-          icon: '1',
+          icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILhhXThYT2otEtbmWWX9tdfybFEnh_SCY8A&usqp=CAU',
           hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-          friends: 'who dis'
+          friends: {id: 2, username: 'mario'}
       },
       {
           id: 6,
           username: 'hamilton',
           email: 'hamilton@mail.com',
           password: 'pass',
-          icon: '1',
+          icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILhhXThYT2otEtbmWWX9tdfybFEnh_SCY8A&usqp=CAU',
           hero: 'https://schoolsweek.co.uk/wp-content/uploads/2019/09/Super-hero-head-sm.jpg',
-          friends: 'who dis'
+          friends: {id: 2, username: 'mario'}
       }
     ];
 

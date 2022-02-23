@@ -51,7 +51,7 @@ User.init(
       },
     },
     friends: {
-        type: DataTypes.STRING,
+        type: DataTypes.JSON,
         allowNull: true,
       },
   },
