@@ -5,7 +5,7 @@ async function favoriteClickHandler(event) {
         window.location.toString().split('/').length - 1
     ];
 
-    const response = await fetch('/api/favorites', {
+    const response = await fetch('api/posts/favorite', {
         method: 'PUT', 
         body: JSON.stringify({
             post_id: id

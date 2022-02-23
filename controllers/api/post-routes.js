@@ -1,10 +1,8 @@
 const router = require('express').Router();
-const { Post, User } = require('../../models');
+const { Post, User, Favorite} = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all posts
-
-
 router.get('/', (req, res) => {
 Post.findAll({
   attributes: ['id', 'post_content', 'created_at'],
@@ -59,6 +57,16 @@ router.post('/', withAuth, (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.put('/favorite', (req, res) => {
+  // custom static method created in models/Post.js
+    Post.Favorite({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
+      .then(updatedVoteData => res.json(updatedVoteData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
 });
 
 router.put('/:id', (req, res) => {
