@@ -163,55 +163,55 @@ const factData = [
     },
     {
         id: 41,
-        fact: " ."
+        fact: "Penguin feet are adapted to help the birds steer while swimming."
     },
     {
         id: 42,
-        fact: " ."
+        fact: "Penguins use their feet like rudders, angling them to help control direction."
     },
     {
         id: 43,
-        fact: " ."
+        fact: "Many male penguins gift female penguins with rocks in order to woo them. The ladies use these rocks to build a nest."
     },
     {
         id: 44,
-        fact: " ."
+        fact: " The penguins’ streamlined design helps them swim fast."
     },
     {
         id: 45,
-        fact: " ."
+        fact: "According to some animal experts, the penguin is one of the most streamlined animals in the world."
     },
     {
         id: 46,
-        fact: " ."
+        fact: "A penguin’s body is tapered at both ends and it has a large head, short neck and elongated body."
     },
     {
         id: 47,
-        fact: " ."
+        fact: "Gentoo Penguins are the fastest of all penguin species. These penguins can swim at speeds of up to 36km/h. That's 4 times faster than any Olympic swimmer."
     },
     {
         id: 48,
-        fact: " ."
+        fact: "The oldest penguin fossils are 62 million years old. That is only 3 million years after the dinosaurs disappeared."
     },
     {
         id: 49,
-        fact: " ."
+        fact: "Penguins poop every 20 minutes. Penguins have a very fast metabolism this means they need to poop, a lot."
     },
     {
         id: 50,
-        fact: " ."
+        fact: "A penguins black and white coloring is called counter-shading."
     },
     {
         id: 51,
-        fact: " ."
+        fact: "All penguin species share counter-shading camouflage. This means they have a lighter belly and a darker back, and helps them camouflage from predators above and below them."
     },
     {
         id: 52,
-        fact: " ."
+        fact: "Penguins are expert divers! Penguins dive to catch their food. The Emperor penguin can dive down to 530m, Gentoo penguins can dive 200m and King penguins can dive around 350m deep."
     },
     {
         id: 53,
-        fact: " ."
+        fact: "The smallest species is the Little Blue Penguin. Also called little penguins or fairy penguins, these 13- to 15-inch cuties would look teeny-tiny next to 4-feet-tall emperor penguins. They also weigh no more than 3 pounds."
     },
     {
         id: 54,
