@@ -3,7 +3,7 @@
 }
 
 body,
-html {
+html, main {
   height: 100%;
   padding: 0px;
   margin: 0;
@@ -18,6 +18,10 @@ a {
 }
 header {
     background-color: #2E0043;
+}
+.dashboard {
+  background-color: #252524;
+  color: #ffffff;
 }
 .header-holder {
   margin: auto;
@@ -49,6 +53,9 @@ nav a {
   padding-left: 5px;
   padding-right: 5px;
 }
+nav button {
+  margin-left: 5px;
+}
 section {
     background-color: #000000;
 }
@@ -59,7 +66,7 @@ a:hover {
     color: #D1E0FF;
   }
 
-  button {
+button {
     background-color: #8CBDFF;
     border: 1 solid #000000;
     padding: 3%;
@@ -68,13 +75,16 @@ a:hover {
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
-    width: 15rem;
+    width: 12rem;
   }
 
-  button:hover {
+button:hover {
     background-color: #D1E0FF;
     border: 1 solid #ffffff;
   }
+.login-holder {
+  height: 100%;
+}
 
 .login-left {
     background-image: url("/img/login-background.jpg");
@@ -125,22 +135,114 @@ form input {
 li {
   list-style-type: none;
 }
+.post-row {
+  padding: 5px
+}
+.icon-holder {
+  padding-top: 30px;
+}
 .post-holder {
-  padding: 10px
+  padding-top: 20px;
+  padding-right: 20px;
 }
 .post {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .error-page {
   text-align: center;
   margin: 0;
+  background-color: #252524;
 }
 
 .error-page img {
   padding-top: 5%;
-  max-width: 40%;
+  max-width: 30%;
+}
+.error-page h2 {
+  color: #ffffff;
 }
 .post-icon {
   max-width: 50px;
+}
+.search-form {
+  padding-top: 10px;
+}
+.friends-list {
+
+}
+.search-form input {
+  max-width: 80%;
+  height: 3rem;
+}
+.search-form button {
+  max-width: 15%;
+  height: 3rem;
+}
+.post-area {
+  padding: 3%;
+}
+textarea {
+  padding: 5px;
+  /* color: #252524; */
+  /* color has to be defined in the handlebars html */
+}
+.new-post-form button {
+  padding: 1%;
+}
+.nav-area {
+  padding-top: 3%;
+}
+.count {
+  color: #ffffff;
+}
+.icecube img {
+  /* padding-top: 200%; */
+  max-width: 40%;
+}
+.icecube {
+  position: fixed;
+  bottom: 0;
+  max-width: 100%;
+}
+.copyright {
+  color: #ffffff;
+}
+.home-cube {
+  max-width: 100%;
+}
+.settings-holder {
+  padding: 5%;
+}
+.settings-holder button {
+  padding: 5px;
+}
+.settings-holder input {
+  padding: 3px;
+  margin: 5px;
+}
+.input-holder{
+  align-items: left;
+}
+.new-icon-img {
+  text-align: left;
+  padding-top: 3%;
+}
+.settings-icon {
+  max-width: 15%;
+}
+.settings-hero {
+  max-width: 70%;
+}
+.profile-nav button{
+  padding: 1%;
+}
+.profile-cube {
+  max-width: 100%;
+}
+.profile-hero {
+  text-align: center;
+}
+.profile-holder {
+  padding: 10%;
 }
