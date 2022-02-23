@@ -49,9 +49,15 @@ User.init(
       validate: {
         isURL: true,
       },
+<<<<<<< HEAD
     }, 
     friends: {
         type: DataTypes.STRING,
+=======
+    },
+    friends: {
+        type: DataTypes.JSON,
+>>>>>>> dev
         allowNull: true,
       },
   },

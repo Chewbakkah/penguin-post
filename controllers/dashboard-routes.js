@@ -79,12 +79,35 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment, Favorite } = require('../models');
 const withAuth = require('../utils/auth');
 
+let getFriends = () => {
+  console.log('getfriends called');
+  router.get('/', (req, res) => {
+    User.findOne({
+      attributes: { exclude: ['password'] },
+      where: {
+        id: req.session.user_id
+      }
+    })
+      .then(dbUserData => {
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!');
+        // console.log(dbUserData);
+        if (!dbUserData) {
+          res.status(404).json({ message: 'No user found with this id' });
+          return;
+        }
+        res.json(dbUserData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+}
+
+
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
   Post.findAll({
-    // where: {
-    //   user_id: req.session.user_id
-    // },
     attributes: [
       'id',
       'post_content',
@@ -113,8 +136,18 @@ router.get('/', withAuth, (req, res) => {
     order: sequelize.literal('created_at DESC'),
     limit: 25,
   })
+  // User.findOne({
+  //   attributes: { exclude: ['password'] },
+  //   where: {
+  //     id: req.session.user_id
+  //   }
+  // })
     .then(dbPostData => {
       console.log(dbPostData);
+<<<<<<< HEAD
+=======
+      
+>>>>>>> dev
       const posts = dbPostData.map(post => post.get({ plain: true }));
       // console.log(posts);
       res.render('dashboard', { posts, loggedIn: true });
