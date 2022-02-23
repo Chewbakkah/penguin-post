@@ -1,18 +1,25 @@
 async function newSearchHandler(event) {
+  event.preventDefault();
 
   
     const search_result = document.querySelector('input[name="search-result"]').value;
     console.log(search_result);
-    
-    if (search_result.ok) {
-        var newURL = window.location.protocol + "//" + window.location.host + "/" + "profile" + "/" + window.location.search_result;
-        document.location.replace(newURL);
-      //document.location.replace('/profile/'+ {searchValue});
+        
+    const response = await fetch('/api/profiles', {
+      method: 'GET',
+      body: JSON.stringify({
+          search_result
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+  
+    if (response.ok) {
+      document.location.replace('/dashboard');
     } else {
-      alert(search_result.statusText);
+      alert(response.statusText);
     }
   }
   
-  document.querySelector('.new-search-form').addEventListener('submit', newSearchHandler);
-  
-  
+  document.querySelector('.new-search-form').addEventListener('submit', newSearchHandler); 
