@@ -2,7 +2,7 @@ const Post = require('./Post');
 const User = require('./User');
 const Repost = require('./Repost');
 const Favorite = require('./Favorite');
-
+const Fact = require('./Fact');
 
 User.hasMany(Post, {
     foreignKey: 'user_id'
@@ -32,4 +32,4 @@ Post.hasMany(Favorite, {
     foreignKey: 'post_id'
 });
 
-module.exports = { Post, User, Repost, Favorite };
+module.exports = { Post, User, Repost, Favorite, Fact };
