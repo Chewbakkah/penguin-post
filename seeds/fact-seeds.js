@@ -215,159 +215,159 @@ const factData = [
     },
     {
         id: 54,
-        fact: " ."
+        fact: "Scientists still don't know for sure how many kinds of penguins there are but, estimates usually fall in the range of 17 to 20."
     },
     {
         id: 55,
-        fact: " ."
+        fact: "Penguins jump into the air before diving to swim faster."
     },
     {
         id: 56,
-        fact: " ."
+        fact: "When Penguins jump into the air, the move releases air bubbles from their feathers, cutting down on drag and doubling or tripling their speed underwater, according to the Smithsonian."
     },
     {
         id: 57,
-        fact: " ."
+        fact: "To make the leap back ashore, some smaller penguins can launch themselves 6 or 9 feet into the air by speedily swimming to the surface and bursting up over the ice shelf."
     },
     {
         id: 58,
-        fact: " ."
+        fact: "Explorers first called them "strange geese."
     },
     {
         id: 59,
-        fact: " ."
+        fact: "They can swim at speeds over 10 miles per hour."
     },
     {
         id: 60,
-        fact: " ."
+        fact: "Gentoos, the speediest penguins, can top 20 mph, but most species dart around at a more modest 4 to 7 mph."
     },
     {
         id: 61,
-        fact: " ."
+        fact: "Gentoos can dive down over 800 feet."
     },
     {
         id: 62,
-        fact: " ."
+        fact: "In the deepest dive ever recorded by the Australian Antarctic Division, an emperor penguin reached an amazing 1,850 feet. Those huge depths require a great lung capacity; the longest-known dives have lasted 22 minutes."
     },
     {
         id: 63,
-        fact: " ."
+        fact: "Penguins' suits act as camouflage."
     },
     {
         id: 64,
-        fact: " ."
+        fact: "Penguins' black backs blend with the ocean water when seen from above, and the white bellies match the bright surface when viewed from below. This disguises them from predators like leopard seals and helps them catch prey like fish, squid, crabs, and krill."
     },
     {
         id: 65,
-        fact: " ."
+        fact: "While penguins sip meltwater from pools and streams when they're thirsty, their hunting style and diet necessitates a cool adaptation."
     },
     {
         id: 66,
-        fact: " ."
+        fact: "Penguins can drink seawater. A supraorbital gland located above their eye removes salt from the bloodstream. The excess sodium then comes out through the bill or by sneezing."
     },
     {
         id: 67,
-        fact: " ."
+        fact: "Some extinct penguins grew more than 5 feet tall."
     },
     {
         id: 68,
-        fact: " ."
+        fact: "Recently discovered fossils indicate that an ancient breed of penguins once stood taller than the average adult man today at 5-foot-10."
     },
     {
         id: 69,
-        fact: " ."
+        fact: "Penguins don't have teeth. Fleshy spines inside their mouths help them swallow fish. The protrusions face backward to help guide the catch down their throats."
     },
     {
         id: 70,
-        fact: " ."
+        fact: "Couples locate each other with distinct calls. The unique sounds help  them reunite on the breeding ground, a not so easy task when there are thousands of identical birds around."
     },
     {
         id: 71,
-        fact: " ."
+        fact: "Emperor penguins incubate eggs on their feet. The male penguins keep them warm under a loose fold of skin. They stay that way for months until the eggs hatch, not leaving even to eat."
     },
     {
         id: 72,
-        fact: " ."
+        fact: "Because of the intense fasting involved, the females often seek out chubbier guys who can go weeks without food as the ladies take a turn to hunt for fish."
     },
     {
         id: 73,
-        fact: " ."
+        fact: "They're waterproof. Penguins spread an oil produced by the preen gland that insulates their bodies and improves their hydrodynamics."
     },
     {
         id: 74,
-        fact: " ."
+        fact: "The largest penguin colonies, called rookeries or waddles when assembled on land, include hundreds of thousands of birds."
     },
     {
         id: 75,
-        fact: " ."
+        fact: "These avid swimmers spend up to 80% of their lives out at sea."
     },
     {
         id: 76,
-        fact: " ."
+        fact: "A group of penguins in the water is called a raft."
     },
     {
         id: 77,
-        fact: " ."
+        fact: "Scientists can find penguins using poop. The abundance of dark excrement, called guano, produced by large colonies allows researchers to see the groups from space."
     },
     {
         id: 78,
-        fact: " ."
+        fact: "In 2018, the smelly giveaway of penguin poop revealed a 1.5 million member "super-colony" of Adelie penguins in the Danger Islands."
     },
     {
         id: 79,
-        fact: " ."
+        fact: "Penguins are specially adapted to sink. While most birds have hollow bones to facilitate flight, penguins have dense skeletons for easier diving."
     },
     {
         id: 80,
-        fact: " ."
+        fact: "They're super friendly with people. Penguins' main predators (seals, sea lions, whales, and sharks) all reside in the water, so these birds feel much safer on land around researchers and tourists."
     },
     {
         id: 81,
-        fact: " ."
+        fact: "Some penguins build pebble nests, others dig out cozy burrows."
     },
     {
         id: 82,
-        fact: " ."
+        fact: "Little penguins tunnel holes in the sand dunes. The males and females take turns incubating the eggs and feeding the chicks until they reach about 8 or 9 weeks old."
     },
     {
         id: 83,
-        fact: " ."
+        fact: "Penguins get their name from a Canadian bird. The now-extinct giant auk looked like the funny black-and-white creatures explorers encountered in the Southern Hemisphere, so they used the scientific name Pinguinus impennis as inspiration."
     },
     {
         id: 84,
-        fact: " ."
+        fact: "Not all penguins live in the Antarctic. The Galápagos penguin stays nice and warm living near the equator. In fact, they're the only penguin species found outside of the Southern Hemisphere."
     },
     {
         id: 85,
-        fact: " ."
+        fact: "Penguins huddle for warmth."
     },
     {
         id: 86,
-        fact: " ."
+        fact: "Macaroni penguins were named for their fashion sense. In 18th-century England, a macaroni referred to an extremely stylish fellow."
     },
     {
         id: 87,
-        fact: " ."
+        fact: "They love tobogganing. Instead of shuffling across the ice, many penguins like to lay on their stomachs and propel themselves with their feet."
     },
     {
         id: 88,
-        fact: " ."
+        fact: "Their first coat of feathers consists of a light down. The weatherproof layer grows in later."
     },
     {
         id: 89,
-        fact: " ."
+        fact: "Penguin chicks start out as little fluffballs."
     },
     {
         id: 90,
-        fact: " ."
+        fact: "Penguins eat snow as a source of freshwater."
     },
     {
         id: 91,
-        fact: " ."
+        fact: "A penguin is an unofficial symbol of the United States Libertarian Party."
     },
     {
         id: 92,
-        fact: " ."
+        fact: "In cold places, male penguins balance eggs on their feet and cover with belly flap to keep them warm."
     },
     {
         id: 93,
