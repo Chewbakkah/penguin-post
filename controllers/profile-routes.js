@@ -4,41 +4,41 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/:id', withAuth, (req, res) => {
-    console.log('profile id called');
-    User.findOne({
-        where: {
-            id: req.params.id
-          },
-      attributes: [
+  Post.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
+    attributes: [
+      'id',
+      'post_content',
+      'created_at'
+    ],
+    include: [
+      {
+        model: User,
+        attributes: [
+          'username',
           'id',
-        'username',
-        'icon',
-        'hero'
-      ],
-      include: [
-        {
-          model: Post,
-          attributes: ['id', 'post_content', 'created_at'],
-          order: sequelize.literal('created_at DESC'),
-          limit: 25,
-        },
-      ]
-      
+          'icon',
+          'hero'
+        ]
+      }
+    ],
+    order: sequelize.literal('created_at DESC'),
+    limit: 25,
+  })
+    .then(dbPostData => {
+      // console.log(dbPostData[0].dataValues.user.dataValues);
+      const posts = dbPostData.map(post => post.get({ plain: true }));
+      const user = dbPostData[0].dataValues.user.dataValues;
+      console.log(user);
+      res.render('profile', { posts, user, loggedIn: true });
     })
-
-      .then(dbPostData => {
-            // console.log(dbPostData);
-          const userInfo = dbPostData.dataValues;
-          const posts = dbPostData.dataValues.posts.map(post => post.get({ plain: true }));
-          console.log(userInfo);
-          console.log(posts);
-          res.render('profile', { userInfo, posts, loggedIn: true });
-      })
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
   
 
 module.exports = router;

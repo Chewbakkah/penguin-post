@@ -1,5 +1,6 @@
 {{> header }}
-<div> This is the profile of {{userInfo.username}}</div>
+<img class="hero" src="{{user.hero}}"/>
+<div> This is the profile of {{user.username}}</div>
 <ol class="post-list">
   {{#each posts as |post|}}
   <li>
