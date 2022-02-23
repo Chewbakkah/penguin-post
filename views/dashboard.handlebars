@@ -6,10 +6,12 @@
       <button type="submit">Direct Message</button>
       <button type="submit">Friend List</button>
       <div class="trending">Trending Goes Here</div>
-      <form class="search">
+      <form class="new-search-form">
             <div>
-              <input type="text" id="search" placeholder="Search" />
+              <label for="search">Search for Friends</label>
+              <input type="text" id="search-result" name="search-result" />
             </div>
+            <button type="submit" class="btn">Search</button>
             </form>
 
 
@@ -37,3 +39,4 @@
 
 {{> footer }}
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/search.js"></script>
