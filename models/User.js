@@ -30,21 +30,21 @@ User.init(
       },
     },
     password: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING(300),
       allowNull: false,
       validate: {
         len: [4],
       },
     },
     icon: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(300),
       allowNull: true,
       validate: {
         isURL: true,
       }
     },
     hero: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(300),
       allowNull: true,
       validate: {
         isURL: true,
