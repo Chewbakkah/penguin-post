@@ -231,7 +231,7 @@ const factData = [
     },
     {
         id: 58,
-        fact: "Explorers first called them "strange geese"."
+        fact: "Explorers first called them strange geese."
     },
     {
         id: 59,
@@ -407,7 +407,7 @@ const factData = [
     },
     {
         id: 102,
-        fact: "enguins have insulating layers of air, skin, and blubber."
+        fact: "Penguins have insulating layers of air, skin, and blubber."
     },
     {
         id: 103,

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
 
-  <body>
+  <body onload="getFact()">
     <div class="wrapper">
       {{!-- {{> header }}       --}}
       <main>
@@ -17,9 +17,9 @@
       </main>
       {{!-- {{> footer }}       --}}
     </div>
-    {{!-- {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}} --}}
+
+      <script src="/javascript/fact.js"></script>
+
   </body>
 
 </html>
