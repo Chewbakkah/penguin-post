@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Favorite , Post } = require('../../models');
+const { Favorite } = require('../../models');
 
 router.get('/', (req, res) => {
     Favorite.findAll()
