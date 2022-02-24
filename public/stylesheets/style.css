@@ -198,11 +198,11 @@ textarea {
 }
 .icecube img {
   /* padding-top: 200%; */
-  max-width: 40%;
+  max-width: 100%;
 }
 .icecube {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   max-width: 100%;
 }
 .copyright {
@@ -245,4 +245,9 @@ textarea {
 }
 .profile-holder {
   padding: 10%;
+}
+.fact-holder {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
 }
