@@ -3,7 +3,7 @@ const User = require('./User');
 const Repost = require('./Repost');
 const Favorite = require('./Favorite');
 const Fact = require('./Fact');
-
+// forcing change
 User.hasMany(Post, {
     foreignKey: 'user_id'
   });  
