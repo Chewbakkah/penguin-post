@@ -74,7 +74,6 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-  // possibly adding ability to update url
   Post.update(
     {
       post_content: req.body.post_content
