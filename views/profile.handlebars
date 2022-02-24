@@ -16,6 +16,8 @@
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
+    <input type="hidden" id="post_id" value="{{post.id}}">
+    <button type="button" class="favorite-btn">Favorite</button> {{post.favorite_count}} Favorites
   </li>
   {{/each}}
 </ol>
@@ -28,3 +30,4 @@
 </div>
 </section>
 {{> footer }}
+<script src="/javascript/favorite.js"></script>

@@ -1,13 +1,16 @@
 const router = require('express').Router();
-const { Post, User } = require('../../models');
+const sequelize = require('../../config/connection')
+const { Post, User, Favorite } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all posts
-
-
 router.get('/', (req, res) => {
 Post.findAll({
-  attributes: ['id', 'post_content', 'created_at'],
+  attributes: ['id', 
+  'post_content', 
+  'created_at',
+  [sequelize.literal('(SELECT COUNT(*) FROM favorite WHERE post.id = favorite.post_id)'), 'favorite_count']
+],
   order: [['created_at', 'DESC']], 
   include: [
     {
@@ -46,6 +49,15 @@ router.get('/:id', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
+    });
+});
+
+router.put('/favorite', (req, res) => {
+  Post.favorite({ ...req.body, user_id: req.session.user_id }, { Favorite, User })
+    .then(updatedFavoriteData => res.json(updatedFavoriteData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err)
     });
 });
 
