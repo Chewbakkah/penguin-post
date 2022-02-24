@@ -15,10 +15,11 @@ router.get("/:username", (req, res) => {
           res.status(404).json({ message: "No user found with this id" });
           return;
         }
-        console.log(dbUserData);
-        res.json(dbUserData);
+        //console.log("LOOK HERE");
+        //console.log(dbUserData[0].dataValues.id);
+       res.redirect(`/profile/${dbUserData[0].dataValues.id}`);
       })
-      .catch((err) => {
+      .catch(err => {
         console.log(err);
         res.status(500).json(err);
       });
