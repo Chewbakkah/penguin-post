@@ -1,20 +1,13 @@
 const router = require('express').Router();
 
-const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
-const dashboardRoutes = require('./dashboard-routes');
-const settingsRoutes = require('./settings-routes');
-const profileRoutes = require('./profile-routes');
+const userRoutes = require('./user-routes.js');
+const postRoutes = require('./post-routes');
+const commentRoutes = require('./comment-routes');
+const searchRoutes = require('./search-routes');
 
-
-router.use('/', homeRoutes);
-router.use('/api', apiRoutes);
-router.use('/dashboard', dashboardRoutes);
-router.use('/settings', settingsRoutes);
-router.use('/profile', profileRoutes);
-
-router.get('*', (req, res) => {
-    res.render('404');
-  });
+router.use('/users', userRoutes);
+router.use('/posts', postRoutes);
+router.use('/comments', commentRoutes);
+router.use('/search', searchRoutes);
 
 module.exports = router;
