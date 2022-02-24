@@ -14,7 +14,7 @@ async function newSearchHandler(event) {
         window.location.replace(`/profile/${id}`);
 
       } else {
-        alert(response.statusText);
+        alert("User Not Found");
       }
     }
   }

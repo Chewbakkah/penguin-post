@@ -231,7 +231,7 @@ const factData = [
     },
     {
         id: 58,
-        fact: "Explorers first called them "strange geese"."
+        fact: "Explorers first called them strange geese."
     },
     {
         id: 59,
