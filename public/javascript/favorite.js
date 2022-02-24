@@ -1,14 +1,15 @@
 async function favoriteClickHandler(event) {
     event.preventDefault();
-
+    const post_id = document.querySelector('#post_id').value.trim();
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
 
-    const response = await fetch('/api/favorites', {
+    const response = await fetch(`/api/posts/favorite/`, {
         method: 'PUT', 
         body: JSON.stringify({
-            post_id: id
+            id,
+            post_id: post_id
         }), 
         headers: {
             'Content-Type': 'application/json'
@@ -22,4 +23,4 @@ async function favoriteClickHandler(event) {
     }
 }
 
-document.querySelector('favorite-btn').addEventListener('click', favoriteClickHandler);
+document.querySelector('.favorite-btn').addEventListener('click', favoriteClickHandler);

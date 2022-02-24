@@ -47,7 +47,6 @@ router.post('/', (req, res) => {
     }
 });
 
-
 router.delete('/:id', (req, res) => {
     Favorite.destroy({
       where: {
