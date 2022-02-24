@@ -1,7 +1,6 @@
 
 async function showFriends() {
   let route = `/api/users/1`;
-
   fetch(route)
     .then((res) => res.json())
     .then((data) => {
@@ -12,4 +11,8 @@ async function showFriends() {
     });
 }
 
-document.querySelector(".friend-list").addEventListener("click", showFriends);
+window.addEventListener("load", (event) => {
+  console.log()
+});
+
+showFriends();

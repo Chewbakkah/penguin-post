@@ -1,4 +1,4 @@
-async function addFriend() {
+async function addFriend() {    
     let route = `/api/users/1`;
   
     fetch(route)
@@ -11,4 +11,4 @@ async function addFriend() {
       });
   }
   
-  document.querySelector(".friend-list").addEventListener("click", addFriend);
+  document.querySelector(".add-friend").addEventListener("click", addFriend);
