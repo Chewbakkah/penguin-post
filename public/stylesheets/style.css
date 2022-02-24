@@ -251,3 +251,6 @@ textarea {
   color: #ffffff;
   padding: 10px;
 }
+.favorite-btn {
+  max-width: 5%;
+}
