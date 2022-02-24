@@ -1,38 +1,73 @@
 {{> header }}
+<section class="container">
+  <div class="row dashboard">
+    <div class="col-md-9 settings-holder">
 <h1>User Settings</h1>
+<div class="new-username-holder">
 Username: {{user.username}}<br />
 <form class="new-username">
             <div>
               <label for="username-update">New Username:</label>
+              <div class="input-holder">
               <input type="text" id="username-update" />
               <input type="hidden" id="user_id" value="{{user.id}}">
+              </div>
             </div>
             <div>
               <button type="submit">UPDATE</button>
             </div>
-            </form><br />
-Icon: <img class="settings-icon" src="{{user.icon}}"/><br />
+            </form>
+            </div>
+            <br />
+            <div class="new-icon-holder row">
+              <div class="new-icon-input col-md-5">
 <form class="new-icon">
             <div>
               <label for="icon-update">New Icon:</label>
+              <div class="input-holder">
               <input type="text" id="icon-update" />
               <input type="hidden" id="user_id" value="{{user.id}}">
+              </div>
             </div>
             <div>
               <button type="submit">UPDATE</button>
             </div>
             </form>
-Hero:<br /><img class="settings-hero" src="{{user.hero}}"/>
+            </div>
+            <div class="new-icon-img col-md-7"><img class="settings-icon" src="{{user.icon}}"/>
+            </div></div>
+<div class="new-hero-holder row">
+<div class="new-hero-input col-md-5">
 <form class="new-hero">
             <div>
               <label for="hero-update">New Hero:</label>
+              <div class="input-holder">
               <input type="text" id="hero-update" />
               <input type="hidden" id="user_id" value="{{user.id}}">
+              </div>
             </div>
             <div>
               <button type="submit">UPDATE</button>
             </div>
             </form>
+            </div>
+            
+            <div class="col-md-7"><img class="settings-hero" src="{{user.hero}}"/>
+            </div>
+
+
+</div>
+
+
+
+            </div>
+            <div class="col-md-3 d-flex flex-column">
+  <div class="mt-auto p-2">
+  <img class="home-cube" src="/img/pengiun-ice.png" />
+  </div>
+</div>
+            </div>
+            </section>
 {{> footer }}
 
 <script src="/javascript/settings.js"></script>

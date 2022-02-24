@@ -1,13 +1,15 @@
 <header>
   <div class="container">
     <div class="row header-holder">
-      
-      <div class="left-header col-md-6"><a href="/"><img src="/img/txt-logo.png" /></a></div>
+
+      <div class="left-header col-md-6"><a href="/"><img
+            src="/img/txt-logo.png"
+          /></a></div>
       <div class="right-header col-md-6">
         <nav>
           {{#if loggedIn}}
-          <a href="/dashboard">Dashboard</a>
-          <a href="/settings">Settings</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/settings">Settings</a>
             <button id="logout" class="btn-no-style">LOGOUT</button>
           {{else}}
             <a href="/login">
