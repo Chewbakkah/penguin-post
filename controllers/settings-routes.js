@@ -16,7 +16,7 @@ router.get('/', withAuth, (req, res) => {
       ]
     })
       .then(dbUserData => {
-        // console.log(dbUserData);
+
         const user = dbUserData.dataValues;
         console.log(user);
         res.render('settings', { user, loggedIn: true });
