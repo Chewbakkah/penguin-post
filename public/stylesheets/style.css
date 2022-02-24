@@ -242,6 +242,8 @@ textarea {
 }
 .profile-hero {
   text-align: center;
+}
+.profile-hero img {
   max-width: 100%;
 }
 .profile-holder {
@@ -254,4 +256,7 @@ textarea {
 }
 .favorite-btn {
   max-width: 5%;
+}
+.favorite-holder {
+  padding-left: 10%;
 }

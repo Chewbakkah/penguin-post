@@ -16,8 +16,10 @@
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
+    <div class="favorite-holder">
     <input type="hidden" id="post_id" value="{{post.id}}">
     <input type="image" src="/img/star.png" class="favorite-btn"> {{post.favorite_count}} Favorites
+    </div>
   </li>
   {{/each}}
 </ol>
