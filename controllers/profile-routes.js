@@ -12,7 +12,8 @@ router.get('/:id', withAuth, (req, res) => {
     attributes: [
       'id',
       'post_content',
-      'created_at'
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM favorite WHERE post.id = favorite.post_id)'), 'favorite_count']
     ],
     include: [
       {
