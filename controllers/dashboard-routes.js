@@ -50,14 +50,9 @@ router.get('/', withAuth, (req, res) => {
     order: sequelize.literal('created_at DESC'),
     limit: 25,
   })
-  // User.findOne({
-  //   attributes: { exclude: ['password'] },
-  //   where: {
-  //     id: req.session.user_id
-  //   }
-  // })
+
     .then(dbPostData => {
-      console.log(dbPostData);
+      // console.log(dbPostData);
       
       const posts = dbPostData.map(post => post.get({ plain: true }));
       // console.log(posts);

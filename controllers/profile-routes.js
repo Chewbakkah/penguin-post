@@ -29,10 +29,10 @@ router.get('/', withAuth, (req, res) => {
     limit: 25,
   })
     .then(dbPostData => {
-      // console.log(dbPostData[0].dataValues.user.dataValues);
+
       const posts = dbPostData.map(post => post.get({ plain: true }));
       const user = dbPostData[0].dataValues.user.dataValues;
-      // console.log(user);
+
       res.render('profile', { posts, user, loggedIn: true });
     })
     .catch(err => {
