@@ -23,6 +23,7 @@ You will then be directed to the user dashboard page. From here you can search f
 
 ### Dashboard 
 ![The Penguin Post Dashboard Page](public/img/Penguin-post-dashboard.png)
+<br><br>
 
 ### Profile 
 ![The Penguin Post Dashboard Page](public/img/Penguin-post-profile-page.png)
