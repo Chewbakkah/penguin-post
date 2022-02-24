@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment, Favorite } = require('../models');
+const { Post, User, Favorite } = require('../models');
 const withAuth = require('../utils/auth');
 
 let getFriends = () => {
@@ -35,7 +35,8 @@ router.get('/', withAuth, (req, res) => {
     attributes: [
       'id',
       'post_content',
-      'created_at'
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM favorite WHERE post.id = favorite.post_id)'), 'favorite_count']
     ],
     include: [
       {
@@ -94,20 +95,5 @@ router.get('/edit/:id', withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = router;

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User, Post, Comment, Favorite } = require("../../models");
+const { User } = require("../../models");
 
 router.get("/:username", (req, res) => {
     User.findAll({
@@ -15,7 +15,9 @@ router.get("/:username", (req, res) => {
         }
         console.log(dbUserData);
 
-       res.redirect(`/profile/${dbUserData[0].dataValues.id}`);
+    //    res.redirect(`/profile/${dbUserData[0].dataValues.id}`);
+    res.json(fact.dataValues);
+    return res.json(fact.dataValue);
       })
       .catch((err) => {
         console.log(err);

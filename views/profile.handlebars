@@ -6,7 +6,7 @@
 <div class="row profile-holder">
 <div class="col-md-4 profile-nav">
 <h2>{{user.username}}</h2>
-<button type="submit">ADD FRIEND</button>
+{{!-- <button type="submit">ADD FRIEND</button> --}}
 <img class="profile-cube" src="/img/pengiun-ice.png" />
 </div>
 <div class="col-md-8 profile-posts">
@@ -16,6 +16,8 @@
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
+    <input type="hidden" id="post_id" value="{{post.id}}">
+    <input type="image" src="/img/star.png" class="favorite-btn"> {{post.favorite_count}} Favorites
   </li>
   {{/each}}
 </ol>
@@ -27,4 +29,6 @@
 </div>
 </div>
 </section>
+{{> fact}}
 {{> footer }}
+<script src="/javascript/favorite.js"></script>
