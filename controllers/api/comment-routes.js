@@ -17,12 +17,7 @@ router.get('/:id', (req, res) => {
             id: req.params.id
         },
         attributes: ['comment_text', 'user_id', 'post_id'],
-        // include: [
-        //     {
-        //         model: User,
-        //         attributes: ['username']
-        //     }
-        // ]
+
     })
     .then(dbPostData => {
         if (!dbPostData) {
