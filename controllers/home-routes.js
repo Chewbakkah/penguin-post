@@ -15,8 +15,10 @@ router.get('/', (req, res) => {
           model: User,
           attributes: ['username', 'icon']
         }
-      ]
-    })
+        ],
+    order: sequelize.literal('created_at DESC'),
+    limit: 25,
+  })
       .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
   

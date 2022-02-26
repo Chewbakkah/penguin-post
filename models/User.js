@@ -65,7 +65,7 @@ User.init(
       },
 
       async beforeUpdate(updatedUserData) {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        // updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10); NOTE TO JOSH This is what was breaking user passwords
         return updatedUserData;
       }
     },
