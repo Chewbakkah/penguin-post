@@ -9,9 +9,11 @@ async function newSearchHandler(event) {
       });
   
       if (response.ok) {
-          let id = response.url.toString().split('/')[response.url.toString().split('/').length - 1
-          ];
-        window.location.replace(`/profile/${id}`);
+        // console.log(response);
+          let id = response.url.toString().split('/')[response.url.toString().split('/').length - 1];
+        // let id = response.JSON;
+        // console.log(id);
+          window.location.replace(`/profile/${id}`);
 
       } else {
         alert("User Not Found");
