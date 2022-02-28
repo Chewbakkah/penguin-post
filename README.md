@@ -1,38 +1,38 @@
-# Penguin Post
+# -PenguinPost-
 
 This website showcases skills learned during weeks 7-14 of The Coding Bootcamp at UT Austin. 
 
-The Penguin Post is a social media website that allows a user to 'Squawk' (share up to 281 characters of information to your friends), favorite Squawks and grow your group of friends to stay engaged with your community.
+PenguinPost is a social media website that allows a user to 'Squawk' (share up to 281 characters of information to your friends), favorite Squawks and grow your group of friends to stay engaged with your community.
 <br><br>
 
-## How Penguin Post is Used
+## How PenguinPost is Used
 When you navigate to our home page you will be able to view a list of recent Squawks in decending order from newest to oldest. From there you can navigate to the login page (by clicking login at the top right corner of the window) to be directed to the login and sign up form.
 
-### Home
-![The Penguin Post Home Page](public/img/Penguin-Home.png)
+### Home Page
+![The PenguinPost Home Page](public/img/Penguin-Home.png)
 <br><br>
 
  When prompted, enter a username, a valid email address and a password then click sign up. 
 <br><br>
 
-### Login 
-![The Penguin Post Login Page](public/img/Penguin-post-login.png)
+### Login Page
+![The PenguinPost Login Page](public/img/Penguin-post-login.png)
 <br><br>
-You will then be directed to the user dashboard page. From here you can create your first Squawk! Click the Username on the Squawk to navigate to that users profile.
-<br><br>
-
-### Dashboard 
-![The Penguin Post Dashboard Page](public/img/Penguin-Dashboard.png)
+You will then be directed to the user dashboard page. From here you can search for friends with the search bar on the left or create your first Squawk! Click the Username on the Squawk to navigate to that users profile.
 <br><br>
 
-### Profile 
-![The Penguin Post Dashboard Page](public/img/Penguin-Profile.png)
+### Dashboard Page
+![The PenguinPost Dashboard Page](public/img/Penguin-Dashboard.png)
+<br><br>
+
+### Profile Page
+![The PenguinPost Dashboard Page](public/img/Penguin-Profile.png)
 <br><br>
 Don't forget to visit the settings page if you want to update your hero image and or user icon.
 <br><br>
 
-### Settings
-![The Penguin Post Settings Page](public/img/Penguin-Settings.png)
+### Settings Page
+![The PenguinPost Settings Page](public/img/Penguin-Settings.png)
 
 <br><br>
 ## Languages/Technologies Used
