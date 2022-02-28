@@ -64,9 +64,9 @@ nav a {
 nav button {
   margin-left: 5px;
 }
-section {
-    /* background-color: #000000; */
-}
+/* section {
+    background-color: #000000;
+} */
 footer {
     text-align: center;
     background-color: #000000;
@@ -181,9 +181,9 @@ li {
 .search-form {
   padding-top: 10px;
 }
-.friends-list {
+/* .friends-list {
 
-}
+} */
 .search-form input {
   max-width: 80%;
   height: 3rem;
